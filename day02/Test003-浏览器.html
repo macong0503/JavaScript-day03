@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		时间控制
+		<button onclick="h()">延迟执行</button><br />
+		<button onclick="k()">周期执行</button>
+		<button onclick="l()">清除</button>
+		<script>
+		function h(){
+			window.setTimeout(function(){
+				console.log("我来了")
+			},2000);
+		}
+		var clock;
+		function k(){
+			clock = window.setInterval(function(){
+				console.log("hello"+new Date())
+			},2000);
+		}
+		function l(){
+			window.clearInterval(clock);
+		}
+		</script>
+		<hr />
+		<button onclick="f()">打开淘宝</button>
+		<button onclick="g()">关闭淘宝</button>
+		
+		<script>
+		var child;
+		function f(){
+			child = window.open("http://www.taobao.com");
+		}
+		function g(){
+			child.close();
+		}
+		</script>
+	</body>
+</html>

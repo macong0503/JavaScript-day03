@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id = "xxx" class="z">呵呵</div>
+		<div name="yyy" class="z">张三</div>
+		<div name="yyy" class="z">李四</div>
+		<script>
+		var node = document.getElementById("xxx");
+		console.log(node);
+		
+		var nodes = document.getElementsByName("yyy");
+		for(i=0;i<nodes.length;i++){
+			console.log(nodes[i]);
+		}
+		
+		var nodes1 = document.getElementsByTagName("div");
+		for(i=0;i<nodes1.length;i++){
+			console.log(nodes1[i]);
+		}
+		
+		var nodes2 = document.getElementsByClassName("z");
+		for(i=0;i<nodes2.length;i++){
+			console.log(nodes2[i]);
+		}
+		</script>
+	</body>
+</html>

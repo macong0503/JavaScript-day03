@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	
+		<ul id="fruit">
+			<li>苹果</li>
+			<li id="xigua">西瓜</li>
+			<li id="xxx">梨</li>
+		</ul>
+		<button onclick="f()">按钮</button>
+		<script>
+		function f(){
+			var node = document.getElementById("fruit");
+			var xigua = document.getElementById("xigua");
+			
+			x2=xigua.cloneNode(true);//克隆
+			node.appendChild("x2");
+			//one.innerText="水蜜桃";
+
+		}
+		</script>
+	</body>
+</html>

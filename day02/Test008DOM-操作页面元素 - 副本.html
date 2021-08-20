@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	
+		<ul id="fruit">
+			<li>苹果</li>
+			<li>西瓜</li>
+		</ul>
+		<button onclick="f()">添加水果</button>
+		<script>
+		function f(){
+			var node = document.getElementById("fruit");
+			
+			var one = document.createElement("li");
+			one.innerText="水蜜桃";
+			node.appendChild(one);
+		}
+		</script>
+	</body>
+</html>

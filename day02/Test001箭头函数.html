@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		箭头函数
+		<script>
+		function add(x,y){
+			return x+y;
+		}
+		
+		var f = (x,y) => {return x+y}
+		var result = f(111,222);
+		
+		console.log(result);
+		//箭头函数当参数只有一个时，可以省略小括号不写
+		var f2 = x => {return x*x}
+		var result = f2(8);
+		console.log(result);
+		//箭头函数当返回语句只有一个时，可以省略花括号和retur不写
+		var f2 = x => x*x
+		var result = f2(9);
+		console.log(result);
+		
+		var arr = [100,200,300,400];
+		var brr = arr.map(item => item * item);
+		console.log(brr)
+		</script>
+	</body>
+</html>
